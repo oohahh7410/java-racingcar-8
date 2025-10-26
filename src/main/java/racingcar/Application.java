@@ -8,7 +8,8 @@ public class Application {
             RacingGameController controller = new RacingGameController();
             controller.run();
         } catch (IllegalArgumentException e) {
-            System.out.println("오류가 발생했습니다: " + e.getMessage());
+            System.out.println(e.getMessage());
+            throw e;
         }
     }
 }
